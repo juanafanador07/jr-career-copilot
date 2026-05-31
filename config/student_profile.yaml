@@ -1,59 +1,66 @@
-# Perfil base del ingeniero junior. 
+# Perfil base del ingeniero junior.
 # Completa tus datos reales en este archivo. El optimizador de CV adaptará esta información
 # a las necesidades de la oferta laboral seleccionada sin añadir experiencia ficticia.
 
 personal_info:
-  full_name: "Alejandro Silva Torres"
-  email: "alejandro.silva@ufps.edu.co"
-  phone: "+57 312 345 6789"
+  full_name: "Juan David Afanador Verjel"
+  email: "juanafanador07@gmail.com"
+  phone: "+57 3143020704"
   location: "Cúcuta, Colombia"
-  linkedin: "https://linkedin.com/in/alesilvatorres"
-  github: "https://github.com/alesilvatorres"
+  linkedin: "https://linkedin.com/in/juanafanador07"
+  github: "https://github.com/juanafanador07"
 
 professional_summary: >
-  Ingeniero de Sistemas Junior con fuerte interés en el desarrollo de software,
-  sistemas distribuidos y machine learning. Experiencia práctica a través de proyectos académicos robustos y
-  una pasantía en desarrollo de backend. Apasionado por resolver problemas complejos y escribir código limpio.
+  Estudiante de Ingeniería de Sistemas de 9° semestre, dominio de programación web Full Stack,
+  despliegue de aplicaciones y administración de servidores Linux. Autodidacta, creativo y resolutivo.
 
 skills:
-  - "Python"
-  - "C++"
-  - "JavaScript"
-  - "SQL (PostgreSQL)"
-  - "Git y GitHub"
-  - "FastAPI"
   - "React"
+  - "TypeScript"
+  - "TailwindCSS"
+  - "Bootstrap"
+  - "Express"
+  - "Spring Boot"
+  - "WordPress"
   - "Docker"
-  - "Metodologías Ágiles (Scrum)"
-  - "Desarrollo de API REST"
-  - "Resolución de problemas técnicos"
+  - "Linux"
+  - "Nginx"
+  - "Traefik"
+  - "Ansible"
+  - "GitHub Actions"
+  - "Puppeteer"
+  - "Trabajo en equipo"
+  - "Resolución de problemas"
+  - "Aprendizaje rápido"
+  - "Responsabilidad y compromiso"
+  - "Español (nativo)"
+  - "Inglés (comprensión escrita avanzada, conversación básica)"
 
 education:
-  - institution: "Universidad Francisco de Paula Santander (UFPS)"
+  - institution: "Universidad Francisco de Paula Santander"
     degree: "Ingeniería de Sistemas"
-    start_date: "2022-08"
-    end_date: "2026-06"
+    start_date: "2022-01"
+    end_date: "present"
     achievements:
-      - "Promedio general sobresaliente: 9.2/10.0"
-      - "Proyecto de fin de carrera: Diseñé e implementé un microservicio de análisis predictivo de tráfico usando Python y FastAPI."
-      - "Miembro activo del Club de Programación Competitiva de la UFPS."
+      - "Promedio actual: 4.23/5"
+      - "Líder del Semillero de Investigación de Aplicaciones Web (SIAWEB)"
+      - "SISGELAB (2025): Plataforma de gestión para el FabLab de la UFPS; frontend con React.js y TailwindCSS; CI/CD con Docker y GitHub Actions. Código: https://github.com/juanafanador07/SISGELAB-frontend | Demo: https://sisgelab.demo.0025600.xyz"
+      - "HorarioApp (2025): Aplicación web con microservicios y asistente de IA para horarios académicos; microservicio con Puppeteer para scraping; prompt engineering. Código: https://github.com/juanafanador07/HorarioApp-frontend | Demo: https://horarioapp.demo.0025600.xyz"
 
 experiences:
-  - company: "SoftTech Solutions"
-    role: "Pasante de Desarrollo de Software"
-    start_date: "2025-06"
-    end_date: "2025-12"
+  - company: "ACOFACIEN"
+    role: "Administrador de sitio web"
+    start_date: "2024-06"
+    end_date: "present"
     achievements:
-      - "Colaboré en la migración de un sistema monolítico heredado a microservicios utilizando Python y Docker, mejorando la modularidad del código."
-      - "Optimicé consultas SQL complejas en la base de datos PostgreSQL de desarrollo, reduciendo los tiempos de respuesta de la API en un 15%."
-      - "Implementé pruebas unitarias automatizadas con Pytest logrando un 85% de cobertura de código para los módulos críticos de autenticación."
-      - "Participé activamente en reuniones de Scrum diarias y en la estimación de historias de usuario con el equipo de desarrollo."
-
-  - company: "Facultad de Ingeniería, UFPS"
-    role: "Ayudante de Profesor (Programación Orientada a Objetos)"
-    start_date: "2024-08"
-    end_date: "2025-06"
-    achievements:
-      - "Apoyé a un grupo de 40 estudiantes semanales en la asimilación de conceptos avanzados de POO, estructuras de datos y buenas prácticas de diseño de software en C++ y Java."
-      - "Diseñé y califiqué 6 prácticas de laboratorio que modelaban problemas de software del mundo real."
-      - "Brindé asesorías personalizadas de depuración y lógica, ayudando a reducir la tasa de reprobación en un 10% respecto a periodos previos."
+      - "Responsable de la gestión de contenidos y mantenimiento del sitio web (https://acofacien.org/) de la Asociación Colombiana de Facultades de Ciencias (ACOFACIEN)."
+      - "Implementé copias de seguridad automáticas, reduciendo el riesgo de pérdida de datos."
+      - "Optimización del rendimiento del sitio, mejorando tiempos de carga y estabilidad."
+      - "Aplicación de estrategias SEO básicas, aumentando la visibilidad en buscadores."
+  - company: "Epsilon Tech S.A.S."
+    role: "Practicante desarrollador de software"
+    start_date: "2026-03"
+    end_date: "2026-06"
+    archivements:
+      - "Desarrollador de sofware Full-Stack con ASP.NET"
+      - "Apoyé el desarrollo de un módulo de generación de reportes para el software contable"
