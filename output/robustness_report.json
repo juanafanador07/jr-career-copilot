@@ -1,0 +1,66 @@
+{
+  "score_honestidad": 82,
+  "alucinaciones_detectadas": [
+    {
+      "linea_cv": "Node.js",
+      "dato_inventado": "La habilidad 'Node.js' se lista explícitamente, mientras que el perfil original solo menciona 'Express' (un framework de Node.js), lo que implica conocimiento pero no lo declara directamente como una habilidad principal.",
+      "severidad": "media"
+    },
+    {
+      "linea_cv": "especializado en la creación de servicios backend y la integración de APIs.",
+      "dato_inventado": "El perfil original indica 'dominio de programación web Full Stack'. La especialización en backend y APIs es una inferencia y un reframing fuerte para el puesto, no una declaración explícita del perfil original.",
+      "severidad": "media"
+    },
+    {
+      "linea_cv": "Comunicación en Inglés",
+      "dato_inventado": "El perfil original especifica 'Inglés (comprensión escrita avanzada, conversación básica)'. La formulación 'Comunicación en Inglés' es una generalización que podría sobreestimar el nivel de conversación básica.",
+      "severidad": "baja"
+    },
+    {
+      "linea_cv": "capacidad excepcional para resolver problemas complejos y optimizar sistemas",
+      "dato_inventado": "El perfil original menciona 'resolutivo'. Añadir 'excepcional' y 'problemas complejos' es una exageración sin respaldo directo.",
+      "severidad": "baja"
+    },
+    {
+      "linea_cv": "asegurando la disponibilidad y el rendimiento óptimo del sitio.",
+      "dato_inventado": "El perfil original menciona 'mantenimiento del sitio web' y 'Optimización del rendimiento'. 'Asegurando la disponibilidad y el rendimiento óptimo' es una inferencia del impacto, no un logro explícito.",
+      "severidad": "baja"
+    },
+    {
+      "linea_cv": "mejorando significativamente los tiempos de carga y la estabilidad de la plataforma.",
+      "dato_inventado": "El perfil original dice 'mejorando tiempos de carga y estabilidad'. La palabra 'significativamente' es una exageración sin métrica de respaldo.",
+      "severidad": "baja"
+    },
+    {
+      "linea_cv": "enfocándose en la lógica de negocio y la integración de datos.",
+      "dato_inventado": "El perfil original solo dice 'Desarrollador de software Full-Stack con ASP.NET'. El enfoque específico en 'lógica de negocio y la integración de datos' es una inferencia sobre las tareas realizadas.",
+      "severidad": "baja"
+    },
+    {
+      "linea_cv": "manejando la extracción y presentación estructurada de datos.",
+      "dato_inventado": "El perfil original dice 'Apoyé el desarrollo de un módulo de generación de reportes'. Los detalles de 'extracción y presentación estructurada de datos' son una inferencia de las responsabilidades.",
+      "severidad": "baja"
+    },
+    {
+      "linea_cv": "Promedio académico sobresaliente: 4.23/5, demostrando excelencia y dedicación en el estudio de sistemas.",
+      "dato_inventado": "El perfil original indica 'Promedio actual: 4.23/5'. Las palabras 'sobresaliente', 'excelencia y dedicación' son valoraciones subjetivas y embellecimientos.",
+      "severidad": "baja"
+    },
+    {
+      "linea_cv": "impulsando la investigación y el desarrollo de tecnologías web avanzadas.",
+      "dato_inventado": "El perfil original dice 'Líder del Semillero de Investigación de Aplicaciones Web (SIAWEB)'. 'Impulsando la investigación y el desarrollo de tecnologías web avanzadas' es una inferencia del rol de líder.",
+      "severidad": "baja"
+    },
+    {
+      "linea_cv": "aplicación web innovadora",
+      "dato_inventado": "El perfil original describe 'Aplicación web con microservicios y asistente de IA'. La palabra 'innovadora' es una valoración subjetiva.",
+      "severidad": "baja"
+    },
+    {
+      "linea_cv": "demostrando habilidades en integración de APIs y herramientas de desarrollo asistido por IA.",
+      "dato_inventado": "El perfil original describe las tecnologías usadas. 'Demostrando habilidades en...' es una conclusión o embellecimiento, no un hecho directo.",
+      "severidad": "baja"
+    }
+  ],
+  "comentario_auditor": "El CV optimizado presenta una buena adaptación al puesto de Desarrollador Backend Junior, destacando habilidades y experiencias relevantes. Sin embargo, se han detectado varias instancias de reframing que, aunque no constituyen fabricaciones directas, sí implican inferencias o exageraciones sobre el perfil original. Las principales preocupaciones éticas radican en la inclusión explícita de 'Node.js' como habilidad, cuando el perfil original solo menciona 'Express', y la declaración de 'especializado en la creación de servicios backend y la integración de APIs' en el resumen, lo cual es una inferencia fuerte de un perfil 'Full Stack' para alinearse con el rol. Estas son consideradas exageraciones menores que podrían requerir clarificación. Además, se observan múltiples embellecimientos en la descripción de logros y habilidades (ej. 'excepcional', 'significativamente', 'sobresaliente', 'innovadora', 'impulsando') y la generalización del nivel de inglés. Si bien estas no son alucinaciones graves, buscan maximizar el impacto sin un respaldo explícito en el fuente de verdad. En general, el CV mantiene la integridad de los hechos fundamentales (empleos, fechas, proyectos), pero utiliza un lenguaje que amplifica el impacto y la especialización del candidato más allá de lo estrictamente documentado en el perfil original. Se recomienda revisar las inferencias y los adjetivos calificativos para asegurar una representación 100% veraz y evitar cualquier percepción de inflado de credenciales."
+}
