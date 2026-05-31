@@ -1,5 +1,6 @@
 import os
 import sys
+import json
 import yaml
 
 def load_profile(profile_path: str) -> dict:
@@ -100,5 +101,55 @@ def save_html(content: str, output_path: str) -> None:
         print("            para obtener un documento PDF con maquetación profesional y limpia.")
     except Exception as exc:
         print(f"\n[ERROR] No se pudo guardar el archivo HTML en '{output_path}':")
+        print(exc)
+        sys.exit(1)
+
+def load_json(json_path: str) -> dict:
+    """
+    Carga y analiza un archivo JSON.
+    
+    Args:
+        json_path (str): Ruta al archivo JSON.
+        
+    Returns:
+        dict: Diccionario con la información del archivo JSON.
+    """
+    if not os.path.exists(json_path):
+        print(f"\n[ERROR] No se pudo encontrar el archivo JSON en: '{json_path}'")
+        sys.exit(1)
+        
+    try:
+        with open(json_path, "r", encoding="utf-8") as file:
+            data = json.load(file)
+            if data is None:
+                raise ValueError("El archivo JSON está vacío.")
+            return data
+    except json.JSONDecodeError as exc:
+        print(f"\n[ERROR] Error de sintaxis al analizar el archivo JSON '{json_path}':")
+        print(exc)
+        sys.exit(1)
+    except Exception as exc:
+        print(f"\n[ERROR] Ocurrió un error inesperado al leer el archivo JSON:")
+        print(exc)
+        sys.exit(1)
+
+def save_json(data: dict, output_path: str) -> None:
+    """
+    Guarda un diccionario en formato JSON en la ruta de salida especificada.
+    
+    Args:
+        data (dict): Diccionario a guardar.
+        output_path (str): Ruta del archivo donde se guardará.
+    """
+    output_dir = os.path.dirname(output_path)
+    if output_dir and not os.path.exists(output_dir):
+        os.makedirs(output_dir, exist_ok=True)
+        
+    try:
+        with open(output_path, "w", encoding="utf-8") as file:
+            json.dump(data, file, ensure_ascii=False, indent=4)
+        print(f"[INFO] Archivo JSON guardado en: '{output_path}'")
+    except Exception as exc:
+        print(f"\n[ERROR] No se pudo guardar el archivo JSON en '{output_path}':")
         print(exc)
         sys.exit(1)

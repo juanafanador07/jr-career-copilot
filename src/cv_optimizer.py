@@ -16,15 +16,18 @@ from file_io import (
     load_profile,
     load_job_description,
     save_markdown,
-    save_html
+    save_html,
+    load_json,
+    save_json
 )
 from renderers import (
     HEADERS,
     generate_markdown,
     generate_html
 )
-from optimizer import optimize_cv
+from optimizer import optimize_cv, DEFAULT_OPTIMIZED_CV_PATH
 from services.mock_interview import MockInterviewService, DEFAULT_TRANSCRIPT_PATH
+from services.robustness_judge import RobustnessJudgeService, DEFAULT_REPORT_PATH
 
 def parse_arguments() -> argparse.Namespace:
     """
@@ -70,13 +73,21 @@ def parse_arguments() -> argparse.Namespace:
         action="store_true",
         help="Ejecuta una entrevista técnica mock interactiva (tecnologías del CV y JD).",
     )
+    parser.add_argument(
+        "--robustness",
+        action="store_true",
+        help="Audita el CV optimizado: alucinaciones, inconsistencias y compliance ético.",
+    )
 
     args = parser.parse_args()
 
     if args.output is None:
-        args.output = (
-            DEFAULT_TRANSCRIPT_PATH if args.mock_interview else "output/optimized_cv.md"
-        )
+        if args.mock_interview:
+            args.output = DEFAULT_TRANSCRIPT_PATH
+        elif args.robustness:
+            args.output = DEFAULT_REPORT_PATH
+        else:
+            args.output = DEFAULT_OPTIMIZED_CV_PATH
 
     return args
 
@@ -111,11 +122,16 @@ def run_optimize(args: argparse.Namespace) -> None:
     html_content = generate_html(optimized_cv, args.template, args.lang)
     
     # 7. Guardar archivos finales
-    save_markdown(markdown_content, args.output)
+    md_output_path = args.output + ".md"
+    save_markdown(markdown_content, md_output_path)
     
-    # Derivar la ruta del archivo HTML reemplazando la extensión .md del output
-    html_output_path = os.path.splitext(args.output)[0] + ".html"
+    # Derivar la ruta del archivo HTML reemplazando la extensión del output
+    html_output_path = args.output + ".html"
     save_html(html_content, html_output_path)
+    
+    # Derivar la ruta del archivo JSON reemplazando la extensión del output
+    json_output_path = args.output + ".json"
+    save_json(optimized_cv.model_dump(), json_output_path)
     
     print("=" * 60)
     print("¡Proceso finalizado con éxito! Éxito en tu postulación laboral.")
@@ -139,6 +155,35 @@ def run_mock_interview(args: argparse.Namespace) -> None:
     )
     service.run_interactive()
 
+def run_robustness(args: argparse.Namespace) -> None:
+    """
+    Optimiza el CV y ejecuta la auditoría de robustez contra el perfil original.
+    """
+    print("=" * 60)
+    print("     AUDITOR DE ROBUSTEZ — JR CAREER COPILOT")
+    print("=" * 60)
+
+    print(f"[INFO] Cargando perfil del candidato desde: '{args.profile}'...")
+    profile = load_profile(args.profile)
+
+    print(f"[INFO] Cargando descripción del puesto en: '{args.job}'...")
+    job_description = load_job_description(args.job)
+
+    # Cargar el CV optimizado desde el archivo JSON generado previamente
+    print(f"[INFO] Cargando CV optimizado desde: '{DEFAULT_OPTIMIZED_CV_PATH}'...")
+    cv_path = DEFAULT_OPTIMIZED_CV_PATH + ".json"
+    cv_data = load_json(cv_path)
+    optimized_cv = OptimizedCV.model_validate(cv_data)
+
+    service = RobustnessJudgeService(
+        profile=profile,
+        optimized_cv=optimized_cv,
+        job_description=job_description,
+        report_path=args.output,
+        lang=args.lang,
+    )
+    service.run_validation()
+
 def main() -> None:
     """
     Función de ejecución principal del CLI.
@@ -147,6 +192,8 @@ def main() -> None:
 
     if args.mock_interview:
         run_mock_interview(args)
+    elif args.robustness:
+        run_robustness(args)
     else:
         run_optimize(args)
 

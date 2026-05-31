@@ -33,6 +33,30 @@ class OptimizedEducation(BaseModel):
         description="Key academic achievements, coursework, or project descriptions aligned with the job requirements."
     )
 
+class Alucinacion(BaseModel):
+    """
+    Representa un dato inventado o no respaldado detectado en el CV optimizado.
+    """
+    linea_cv: str = Field(description="Texto exacto o sección del CV donde aparece el dato cuestionable")
+    dato_inventado: str = Field(description="Descripción del dato que no está respaldado por el perfil original")
+    severidad: str = Field(description="Nivel de severidad: 'baja', 'media' o 'alta'")
+
+class ReporteRobustez(BaseModel):
+    """
+    Reporte estructurado de auditoría de honestidad y robustez del CV optimizado.
+    """
+    score_honestidad: int = Field(
+        ge=0,
+        le=100,
+        description="Puntuación de honestidad de 0 a 100 respecto al perfil original",
+    )
+    alucinaciones_detectadas: List[Alucinacion] = Field(
+        description="Lista de alucinaciones, inconsistencias o datos no verificables detectados"
+    )
+    comentario_auditor: str = Field(
+        description="Resumen del auditor sobre cumplimiento ético, inconsistencias y recomendaciones"
+    )
+
 class OptimizedCV(BaseModel):
     """
     Estructura completa del currículum optimizado y adaptado.

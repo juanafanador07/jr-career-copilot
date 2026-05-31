@@ -5,6 +5,8 @@ from google import genai
 from google.genai import types
 from models import OptimizedCV
 
+DEFAULT_OPTIMIZED_CV_PATH = "output/optimized_cv"
+
 def optimize_cv(profile: dict, job_description: str, lang: str = "es") -> OptimizedCV:
     """
     Se conecta con la API de Gemini 2.5 Flash para optimizar el CV del ingeniero junior
