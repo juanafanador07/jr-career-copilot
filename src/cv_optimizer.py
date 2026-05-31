@@ -1,5 +1,4 @@
 import os
-import sys
 import argparse
 from dotenv import load_dotenv
 
@@ -25,16 +24,17 @@ from renderers import (
     generate_html
 )
 from optimizer import optimize_cv
+from services.mock_interview import MockInterviewService, DEFAULT_TRANSCRIPT_PATH
 
 def parse_arguments() -> argparse.Namespace:
     """
     Analiza los argumentos de la línea de comandos.
-    
+
     Returns:
         argparse.Namespace: Los argumentos analizados por el parser.
     """
     parser = argparse.ArgumentParser(
-        description="Optimizador de CV con Inteligencia Artificial para Ingenieros Junior."
+        description="JR Career Copilot — Optimizador de CV y herramientas de preparación laboral."
     )
     parser.add_argument(
         "-j", "--job",
@@ -48,8 +48,11 @@ def parse_arguments() -> argparse.Namespace:
     )
     parser.add_argument(
         "-o", "--output",
-        default="output/optimized_cv.md",
-        help="Ruta donde se guardará el currículum optimizado en formato Markdown (por defecto: output/optimized_cv.md)."
+        default=None,
+        help=(
+            "Ruta de salida: CV optimizado (.md) o transcripción de entrevista "
+            f"(por defecto: output/optimized_cv.md o {DEFAULT_TRANSCRIPT_PATH})."
+        )
     )
     parser.add_argument(
         "-l", "--lang",
@@ -62,9 +65,22 @@ def parse_arguments() -> argparse.Namespace:
         default="templates/cv_template.html",
         help="Ruta a la plantilla HTML Jinja2 (por defecto: templates/cv_template.html)."
     )
-    return parser.parse_args()
+    parser.add_argument(
+        "--mock-interview",
+        action="store_true",
+        help="Ejecuta una entrevista técnica mock interactiva (tecnologías del CV y JD).",
+    )
 
-def main() -> None:
+    args = parser.parse_args()
+
+    if args.output is None:
+        args.output = (
+            DEFAULT_TRANSCRIPT_PATH if args.mock_interview else "output/optimized_cv.md"
+        )
+
+    return args
+
+def run_optimize(args: argparse.Namespace) -> None:
     """
     Función de ejecución principal del optimizador.
     """
@@ -104,6 +120,35 @@ def main() -> None:
     print("=" * 60)
     print("¡Proceso finalizado con éxito! Éxito en tu postulación laboral.")
     print("=" * 60)
+
+def run_mock_interview(args: argparse.Namespace) -> None:
+    """
+    Ejecuta la entrevista técnica mock interactiva.
+    """
+    print(f"[INFO] Cargando perfil del candidato desde: '{args.profile}'...")
+    profile = load_profile(args.profile)
+
+    print(f"[INFO] Cargando descripción del puesto en: '{args.job}'...")
+    job_description = load_job_description(args.job)
+
+    service = MockInterviewService(
+        profile=profile,
+        job_description=job_description,
+        transcript_path=args.output,
+        lang=args.lang,
+    )
+    service.run_interactive()
+
+def main() -> None:
+    """
+    Función de ejecución principal del CLI.
+    """
+    args = parse_arguments()
+
+    if args.mock_interview:
+        run_mock_interview(args)
+    else:
+        run_optimize(args)
 
 if __name__ == "__main__":
     main()
