@@ -1,0 +1,38 @@
+Desarrollador/a MERN (MongoDB, Express, React, Node.js)
+
+Ubicación: Hibrido (Bogotá)
+Compañía: Excelia
+
+Acerca del empleo
+Estamos buscando un/a Desarrollador/a MERN apasionado/a por construir aplicaciones web modernas, escalables y de alto impacto. Formarás parte de un equipo dinámico enfocado en el desarrollo de productos digitales.
+
+Responsabilidades
+- Desarrollar aplicaciones web robustas utilizando Node.js (backend), React (frontend) y MongoDB (base de datos)
+- Participar en el diseño y la arquitectura de soluciones, aplicando buenas prácticas de desarrollo
+- Colaborar con el equipo para definir y entender los requerimientos del producto
+- Implementar y consumir API REST
+- Realizar pruebas, depuración y optimización de código
+- Mantener y mejorar aplicaciones existentes
+- Gestionar despliegues, monitoreo, logs y mantenimiento de entornos
+- Mantenerse actualizado/a en tendencias tecnológicas y compartir conocimiento con el equipo
+
+Requisitos
+- Experiencia sólida con el stack MERN (MongoDB, Express, React, Node.js)
+- Experiencia con bases de datos no relacionales
+- Manejo de control de versiones (Git)
+- Experiencia en desarrollo y consumo de API REST
+- Experiencia previa trabajando en productos propios o entornos de desarrollo estructurados
+- Conocimiento del ciclo de vida del software (deploy, mantenimiento, monitoreo, etc.)
+- Capacidad para escribir código limpio, escalable y mantenible
+- Buenas habilidades de resolución de problemas
+
+Habilidades clave
+- Comunicación efectiva y trabajo en equipo
+- Proactividad y autonomía
+- Enfoque en calidad e impacto del producto
+- Interés por el aprendizaje continuo
+
+Ofrecemos
+- Participación en proyectos innovadores
+- Entorno colaborativo y de crecimiento profesional
+- Cultura enfocada en tecnología y mejora continua
