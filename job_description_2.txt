@@ -1,0 +1,57 @@
+Desarrollador Backend
+
+Ubicación: Remoto
+Compañía: Nua
+
+Acerca del empleo
+En Nua Technology creamos productos SaaS innovadores que combinan voz, automatización e inteligencia artificial en arquitecturas cloud de última generación. Nuestro foco no es solo desarrollar software, sino construir soluciones tecnológicas escalables que redefinan la forma en que las organizaciones operan.
+
+Buscamos un(a) Desarrollador DevOps Backend que quiera ser parte activa en la creación y evolución de nuevos productos digitales, trabajando con tecnologías de punta bajo metodologías ágiles.
+
+
+Tu misión: Diseñar y desplegar soluciones Backend escalables en AWS, garantizando calidad técnica automatización y eficiencia operativa.
+
+Formación Académica:
+
+Profesional en Ingeniería de Sistemas, Electrónica o Telecomunicaciones.
+
+Certificaciones AWS altamente valoradas.
+
+¿Qué harás con nosotros?
+- Desarrollar APIs REST en Node.js, Python, TypeScript
+- Implementar arquitecturas serverless en AWS (Lambda, API Gateway, DynamoDB).
+- Diseñar soluciones basadas en microservicios.
+- Ejecutar pruebas funcionales.
+- Implementar pipelines CI/CD.
+- Trabajar en equipo bajo metodologías ágiles.
+- Apoyar componentes React cuando el proyecto lo requiera.
+- Participar activamente en decisiones técnicas.
+
+En este rol participarás en proyectos de desarrollo de software utilizando tecnologías de punta bajo un marco de metodologías ágiles. Dentro de un equipo con grandes fortalezas técnicas, serás dirigido por un arquitecto de soluciones en nube. Te beneficiarás de un aprendizaje metodológico.
+
+Para tener éxito en este rol, necesitas:
+- Ser autónomo y dinámico: Tener capacidad para trabajar en equipo y comunicarse de manera eficaz escrita y verbalmente.
+- Tener la capacidad de trabajar virtualmente, pero también disfrutamos de reuniones semanales periódicas para trabajar y compartir en equipo (Si estás en Bogotá/ Medellín).
+- Conocimiento para realizar pruebas funcionales.
+- Conocimiento en API REST.
+- Conocimiento básico en lógica de desarrollo: Back-end.
+- Conocimientos en AWS (Lambda, API Gateway, DynamoDB).
+- Conocimientos en arquitecturas basadas en microservicios.
+
+Tecnologías de trabajo
+- React
+- Nodejs
+- Git
+- AWS
+- API Gateway
+- AWS Lambda
+- DynamoDB
+- Manejo básico de OS Unix
+- VoIP 
+- Networking
+
+Experiencia
++2 años en desarrollo backend.
++1 año trabajando con AWS.
+Experiencia en arquitecturas basadas en microservicios.
+Experiencia en entornos SaaS.
