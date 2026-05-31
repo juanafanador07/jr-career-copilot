@@ -1,0 +1,41 @@
+Junior NodeJS Back End Developer
+
+Ubicación: Remoto
+Compañía: Security Dealer Marketing
+
+About the Role
+SD Marketing is looking for a Junior Backend Developer to join our development team. You'll work alongside our lead developer to build and maintain in-house productivity tools and platforms that power our agency, connecting data from marketing channels like Google Ads, Meta, LinkedIn, and more into the systems our creative and management teams rely on every day.
+
+Why Join Us
+We're a small, focused team that moves fast and builds things that matter. You'll have real ownership over your work, direct access to leadership, and the chance to grow alongside a company that's been in business since 2011. If you like solving practical problems and developing applications that people actually use, this is a great fit.
+
+What You'll Work On
+    Build and maintain RESTful APIs and backend services using Node.js.
+    Integrate in-house APIs with third-party marketing platforms like Google Ads, Meta/Facebook, LinkedIn, and Google Search Console to power internal reporting and automation tools.
+    Keep SDKs, libraries, and dependencies up to date across projects.
+    Write and optimize PostgreSQL queries and manage database schemas.
+    Collaborate through Git for version control (we use Bitbucket).
+    Participate in code reviews and help improve our development workflows.
+    Troubleshoot and debug issues across backend services.
+
+What We're Looking For
+    Proficiency in Node.js for backend development.
+    Experience working with PostgreSQL.
+    Experience integrating third-party marketing platform APIs and maintaining compatibility.
+    Comfortable with Git for version control (bonus points for Bitbucket experience).
+    Experience with NestJS is a strong plus.
+    Experience using AI-assisted development tools such as Claude Code or Cursor.
+    Good communication skills in English.
+
+Nice to Have
+    Familiarity with TypeScript.
+    Experience with ORMs (Drizzle, TypeORM, Prisma, etc.).
+    Interest in marketing, technology, and data-oriented applications.
+
+
+REQUIRED - Examples of your Work
+Applicants must be able to provide a GitHub or Bitbucket profile with active or recent projects, or examples of previous work you can walk us through. Personal projects are acceptable as long as they demonstrate a real-world problem and solution. If your code isn't available publicly, you're welcome to screen share and walk us through your contributions during the interview.
+We want to see how you write code, not just hear about it.
+
+About Us
+Founded in 2011, SD Marketing has been a growth partner to over 300 companies in the security industry, from integrators and dealers to guard and fire companies that specialize in video surveillance, alarm systems, access control, and more. Our clients trust us because we're strategic, transparent, and focused on building their brand and driving inbound leads.
